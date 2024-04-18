@@ -12,6 +12,9 @@ $(document).ready(function () {
       return;
     }
 
+    // Store email in cookie
+    document.cookie = "email=" + email + "; path=/";
+
     $("#successModal").modal("show");
   });
 });
